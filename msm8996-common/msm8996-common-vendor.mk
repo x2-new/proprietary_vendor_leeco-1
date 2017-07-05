@@ -521,11 +521,13 @@ PRODUCT_PACKAGES += \
     ims \
     imssettings \
     CNEService \
+    SmartcardService \
     com.qualcomm.location \
     dpmserviceapp \
     qcrilmsgtunnel \
     TimeService \
     colorservice \
+    org.simalliance.openmobileapi \
     qcnvitems \
     qcrilhook
 PRODUCT_COPY_FILES += \

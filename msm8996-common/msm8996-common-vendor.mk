@@ -50,6 +50,7 @@ PRODUCT_COPY_FILES += \
     vendor/leeco/msm8996-common/proprietary/etc/init.uei.sh:system/etc/init.uei.sh \
     vendor/leeco/msm8996-common/proprietary/etc/init/dpmd.rc:system/etc/init/dpmd.rc \
     vendor/leeco/msm8996-common/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
+    vendor/leeco/msm8996-common/proprietary/etc/permissions/com.google.widevine.software.drm.xml:system/etc/permissions/com.google.widevine.software.drm.xml \
     vendor/leeco/msm8996-common/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
     vendor/leeco/msm8996-common/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
     vendor/leeco/msm8996-common/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:system/etc/permissions/com.qti.snapdragon.sdk.display.xml \
@@ -78,7 +79,9 @@ PRODUCT_COPY_FILES += \
     vendor/leeco/msm8996-common/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/leeco/msm8996-common/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/leeco/msm8996-common/proprietary/framework/uimlpalibrary.jar:system/framework/uimlpalibrary.jar \
+    vendor/leeco/msm8996-common/proprietary/lib/android.hardware.drm@1.0.so:system/lib/android.hardware.drm@1.0.so \
     vendor/leeco/msm8996-common/proprietary/lib/com.qualcomm.qti.dpm.api@1.0.so:system/lib/com.qualcomm.qti.dpm.api@1.0.so \
+    vendor/leeco/msm8996-common/proprietary/lib/drm/libfwdlockengine.so:system/lib/drm/libfwdlockengine.so \
     vendor/leeco/msm8996-common/proprietary/lib/libadsprpc.so:system/lib/libadsprpc.so \
     vendor/leeco/msm8996-common/proprietary/lib/libdiag_system.so:system/lib/libdiag_system.so \
     vendor/leeco/msm8996-common/proprietary/lib/libdpmctmgr.so:system/lib/libdpmctmgr.so \
@@ -86,6 +89,9 @@ PRODUCT_COPY_FILES += \
     vendor/leeco/msm8996-common/proprietary/lib/libdpmframework.so:system/lib/libdpmframework.so \
     vendor/leeco/msm8996-common/proprietary/lib/libdpmnsrm.so:system/lib/libdpmnsrm.so \
     vendor/leeco/msm8996-common/proprietary/lib/libdpmtcm.so:system/lib/libdpmtcm.so \
+    vendor/leeco/msm8996-common/proprietary/lib/libdrmframework.so:system/lib/libdrmframework.so \
+    vendor/leeco/msm8996-common/proprietary/lib/libdrmframework_jni.so:system/lib/libdrmframework_jni.so \
+    vendor/leeco/msm8996-common/proprietary/lib/libmediadrm.so:system/lib/libmediadrm.so \
     vendor/leeco/msm8996-common/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
     vendor/leeco/msm8996-common/proprietary/lib/libqmi_cci_system.so:system/lib/libqmi_cci_system.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib/libsdm-disp-apis.so:system/vendor/lib/libsdm-disp-apis.so \
@@ -94,7 +100,9 @@ PRODUCT_COPY_FILES += \
     vendor/leeco/msm8996-common/proprietary/lib/vendor.display.postproc@1.0.so:system/lib/vendor.display.postproc@1.0.so \
     vendor/leeco/msm8996-common/proprietary/lib/vendor.qti.hardware.qdutils_disp@1.0.so:system/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
     vendor/leeco/msm8996-common/proprietary/lib/vendor.qti.hardware.qteeconnector@1.0.so:system/lib/vendor.qti.hardware.qteeconnector@1.0.so \
+    vendor/leeco/msm8996-common/proprietary/lib64/android.hardware.drm@1.0.so:system/lib64/android.hardware.drm@1.0.so \
     vendor/leeco/msm8996-common/proprietary/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/lib64/com.qualcomm.qti.dpm.api@1.0.so \
+    vendor/leeco/msm8996-common/proprietary/lib64/drm/libfwdlockengine.so:system/lib64/drm/libfwdlockengine.so \
     vendor/leeco/msm8996-common/proprietary/lib64/lib-imscamera.so:system/lib64/lib-imscamera.so \
     vendor/leeco/msm8996-common/proprietary/lib64/lib-imsvideocodec.so:system/lib64/lib-imsvideocodec.so \
     vendor/leeco/msm8996-common/proprietary/lib64/lib-imsvt.so:system/lib64/lib-imsvt.so \
@@ -107,9 +115,12 @@ PRODUCT_COPY_FILES += \
     vendor/leeco/msm8996-common/proprietary/lib64/libdpmframework.so:system/lib64/libdpmframework.so \
     vendor/leeco/msm8996-common/proprietary/lib64/libdpmnsrm.so:system/lib64/libdpmnsrm.so \
     vendor/leeco/msm8996-common/proprietary/lib64/libdpmtcm.so:system/lib64/libdpmtcm.so \
+    vendor/leeco/msm8996-common/proprietary/lib64/libdrmframework.so:system/lib64/libdrmframework.so \
+    vendor/leeco/msm8996-common/proprietary/lib64/libdrmframework_jni.so:system/lib64/libdrmframework_jni.so \
     vendor/leeco/msm8996-common/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/leeco/msm8996-common/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
     vendor/leeco/msm8996-common/proprietary/lib64/liblocationservice_jni.so:system/lib64/liblocationservice_jni.so \
+    vendor/leeco/msm8996-common/proprietary/lib64/libmediadrm.so:system/lib64/libmediadrm.so \
     vendor/leeco/msm8996-common/proprietary/lib64/libparam.so:system/lib64/libparam.so \
     vendor/leeco/msm8996-common/proprietary/lib64/libqmi_cci_system.so:system/lib64/libqmi_cci_system.so \
     vendor/leeco/msm8996-common/proprietary/lib64/librcc.so:system/lib64/librcc.so \
@@ -261,6 +272,10 @@ PRODUCT_COPY_FILES += \
     vendor/leeco/msm8996-common/proprietary/vendor/lib/libcppf.so:system/vendor/lib/libcppf.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib/libdpmqmihal.so:system/vendor/lib/libdpmqmihal.so \
+    vendor/leeco/msm8996-common/proprietary/vendor/lib/libdrm.so:system/vendor/lib/libdrm.so \
+    vendor/leeco/msm8996-common/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
+    vendor/leeco/msm8996-common/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
+    vendor/leeco/msm8996-common/proprietary/vendor/lib/libdrmutils.so:system/vendor/lib/libdrmutils.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib/libfastcvadsp_stub.so:system/vendor/lib/libfastcvadsp_stub.so \
@@ -317,6 +332,7 @@ PRODUCT_COPY_FILES += \
     vendor/leeco/msm8996-common/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
+    vendor/leeco/msm8996-common/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib/qcdrm/playready/lib/drm/libdrmprplugin_customer.so:system/vendor/lib/qcdrm/playready/lib/drm/libdrmprplugin_customer.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib/qcdrm/playready/lib/libprdrmdecrypt_customer.so:system/vendor/lib/qcdrm/playready/lib/libprdrmdecrypt_customer.so \
@@ -417,8 +433,10 @@ PRODUCT_COPY_FILES += \
     vendor/leeco/msm8996-common/proprietary/vendor/lib64/libdiag.so:system/vendor/lib64/libdiag.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib64/libdisp-aba.so:system/vendor/lib64/libdisp-aba.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib64/libdpmqmihal.so:system/vendor/lib64/libdpmqmihal.so \
+    vendor/leeco/msm8996-common/proprietary/vendor/lib64/libdrm.so:system/vendor/lib64/libdrm.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib64/libdrmfs.so:system/vendor/lib64/libdrmfs.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib64/libdrmtime.so:system/vendor/lib64/libdrmtime.so \
+    vendor/leeco/msm8996-common/proprietary/vendor/lib64/libdrmutils.so:system/vendor/lib64/libdrmutils.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib64/libdrplugin_client.so:system/vendor/lib64/libdrplugin_client.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib64/libdsi_netctrl.so:system/vendor/lib64/libdsi_netctrl.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib64/libdsutils.so:system/vendor/lib64/libdsutils.so \
@@ -503,6 +521,7 @@ PRODUCT_COPY_FILES += \
     vendor/leeco/msm8996-common/proprietary/vendor/lib64/libxtadapter.so:system/vendor/lib64/libxtadapter.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib64/libxtwifi_ulp_adaptor.so:system/vendor/lib64/libxtwifi_ulp_adaptor.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib64/mediadrm/libdrmclearkeyplugin.so \
+    vendor/leeco/msm8996-common/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:system/vendor/lib64/mediadrm/libwvdrmengine.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib64/sensors.hal.tof.so:system/vendor/lib64/sensors.hal.tof.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib64/sensors.oem.so:system/vendor/lib64/sensors.oem.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib64/sensors.ssc.so:system/vendor/lib64/sensors.ssc.so \

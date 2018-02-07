@@ -521,7 +521,6 @@ PRODUCT_PACKAGES += \
     ims \
     imssettings \
     CNEService \
-    SmartcardService \
     com.qualcomm.location \
     dpmserviceapp \
     qcrilmsgtunnel \

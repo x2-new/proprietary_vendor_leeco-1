@@ -207,7 +207,6 @@ PRODUCT_COPY_FILES += \
     vendor/leeco/msm8996-common/proprietary/vendor/etc/init/vendor.qti.gnss@1.0-service.rc:system/vendor/etc/init/vendor.qti.gnss@1.0-service.rc \
     vendor/leeco/msm8996-common/proprietary/vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc:system/vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc \
     vendor/leeco/msm8996-common/proprietary/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc:system/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc \
-    vendor/leeco/msm8996-common/proprietary/vendor/etc/thermal-engine.conf:system/vendor/etc/thermal-engine.conf \
     vendor/leeco/msm8996-common/proprietary/vendor/etc/xtra_root_cert.pem:system/vendor/etc/xtra_root_cert.pem \
     vendor/leeco/msm8996-common/proprietary/vendor/firmware/widevine.b00:system/vendor/firmware/widevine.b00 \
     vendor/leeco/msm8996-common/proprietary/vendor/firmware/widevine.b01:system/vendor/firmware/widevine.b01 \
